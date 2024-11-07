@@ -4,12 +4,12 @@ body {
     margin: 0;
 
     background-color: #1d170a;
-    color: white;
+    color: black;
     font-family: "Roboto", sans-serif;
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -33,17 +33,18 @@ ul {
     width: 190px;
     height: 55px;
 
+    color: white;
     background-color: #8B2A20;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 17px;
     border-radius: 10px;
 
-    transition: opacity 0.2s;
+    transition: background-color 0.2s;
 }
 
 .btn:hover {
-    opacity: 0.9;
+    background-color: #6e221a;
 }
 
 .header {
@@ -62,22 +63,38 @@ ul {
 }
 
 .header img {
+    filter: invert(1);
     width: 70px;
 }
 
 .header-nav a {
     font-size: 14px;
-    opacity: 0.6;
+    opacity: 0.8;
 
     transition: opacity 0.2s;
 }
 
 .header-nav a.active {
+    font-weight: bold;
     font-size: 14px;
     opacity: 1;
 }
 
 .header-nav a:hover {
-    opacity: 0.8;
+    opacity: 1;
+}
+
+.welcome {
+    margin-top: -122px;
+    height: 500px;
+    padding-top: 250px;
+    background-image: url(/src/images/welcome-bg.png);
+    background-position: 20% 10%; 
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.welcome-subtitle, .welcome-title, .welcome p {
+    width: 590px;
 }
 
