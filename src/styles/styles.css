@@ -99,13 +99,15 @@ img {
     height: 500px;
     padding-top: 250px;
     background-image: url(/src/images/welcome-bg.png);
-    background-position: 20% 10%; 
+    background-position: 20% 10%;
     background-size: 120%;
     background-repeat: no-repeat;
     padding-bottom: 100px;
 }
 
-.welcome-subtitle, .welcome-title, .welcome p {
+.welcome-subtitle,
+.welcome-title,
+.welcome p {
     width: 590px;
 }
 
@@ -131,7 +133,7 @@ img {
 }
 
 .card:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .card h3 {
@@ -171,12 +173,12 @@ img {
     color: #8B2A20;
     font-weight: 500px;
     font-size: medium;
-    
+
     text-decoration-line: line-through;
     opacity: 0.7;
 }
 
-.popular-price + .popular-old-price {
+.popular-price+.popular-old-price {
     margin-left: 7px;
 }
 
@@ -188,4 +190,3 @@ img {
     width: 550px;
     margin-right: 150px;
 }
-
