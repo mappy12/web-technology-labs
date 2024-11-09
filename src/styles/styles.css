@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 
@@ -158,6 +162,7 @@ img {
     background-image: url(/src/images/money-motive.png);
     height: 700px;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .popular h1 {
@@ -189,4 +194,38 @@ img {
 .popular-wrapper {
     width: 550px;
     margin-right: 150px;
+}
+
+.footer .container {
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.footer img {
+    width: 100px;
+}
+
+.footer a {
+    background-color:#ffffff ;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+
+.footer a:hover {
+    background-color:#000000 ;
+    color: white;
+}
+
+.footer li {
+    margin-bottom: 30px;
+}
+
+.footer-logo img:hover {
+    filter: invert(1);
 }
