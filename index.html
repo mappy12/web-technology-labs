@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DENEX</title>
     <link rel="stylesheet" href="src/styles/styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -16,6 +19,7 @@
             <a href="#"><img src="src/images/logo.png" alt="logo"></a>
 
             <nav class="header-nav">
+                <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
                 <ul class="header-list">
                     <li><a class="active" href="#">HOME</a></li>
                     <li><a href="#out-products">OUT PRODUCTS</a></li>
@@ -40,33 +44,64 @@
             </div>
         </div>
 
-        <h1 id="out-products" style="color: white; text-align: center; margin-top: 40px;">OUT PRODUCTS</h1>
+        <h1 id="out-products" style="color: white; text-align: center; margin-top: 60px;">OUT PRODUCTS</h1>
 
         <div class="out-product">
             <div class="container">
-                <div class="card">
+                <div class="card card-1">
                     <img src="src/images/card-1.png" alt="" class="card-img">
                     <h3>Gothic</h3>
                     <p>Trendy jeans for youth, stylish and effortlessly comfortable.</p>
                 </div>
-
-                <div class="card">
+                
+                <div class="card card-2">
                     <img src="src/images/card-2.png" alt="" class="card-img">
                     <h3>Skull</h3>
                     <p>Edgy jeans with skull design, bold and unique.</p>
                 </div>
-
-                <div class="card">
+                
+                <div class="card card-3">
                     <img src="src/images/card-6.png" alt="" class="card-img">
                     <h3>Baggy or Basic</h3>
                     <p>Relaxed-fit baggy jeans, casual style with roomy comfort.</p>
                 </div>
 
-                <div class="card">
+                <div class="card card-4">
                     <img src="src/images/card-5.png" alt="" class="card-img">
                     <h3>MONEY THE MOTIVE</h3>
                     <p>Bold "MONEY THE MOTIVE" tee, statement-making and stylish.</p>
                 </div>
+                
+                <div class="card card-5">
+                    <img src="src/images/test-image.png" alt="" class="card-img">
+                    <h3>TEST</h3>
+                    <p>Description</p>
+                </div>
+
+                <div class="card card-6">
+                    <img src="src/images/test-image.png" alt="" class="card-img">
+                    <h3>TEST</h3>
+                    <p>Description</p>
+                </div>
+
+                <div class="card card-7">
+                    <img src="src/images/test-image.png" alt="" class="card-img">
+                    <h3>TEST</h3>
+                    <p>Description</p>
+                </div>
+
+                <div class="card card-8">
+                    <img src="src/images/test-image.png" alt="" class="card-img">
+                    <h3>TEST</h3>
+                    <p>Description</p>
+                </div>
+
+                <div class="card card-9">
+                    <img src="src/images/test-image.png" alt="" class="card-img">
+                    <h3>TEST</h3>
+                    <p>Description</p>
+                </div>
+
 
             </div>
         </div>
@@ -107,11 +142,14 @@
                 <li><a href="#">Yandex Market</a></li>
             </ul>
 
-            <div class="footer-logo">
-                <img src="src/images/logo.png" alt="">
+            <div class="footer-map">
+                <h3>Our Location</h3>
+                <div id="map"></div>
             </div>
         </div>
     </footer>
+
+    <script src="src/js/map.js"></script>
 </body>
 
 </html>
