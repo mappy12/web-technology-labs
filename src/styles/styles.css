@@ -131,6 +131,7 @@ img {
     width: 590px;
 }
 
+
 .out-product .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -232,7 +233,6 @@ img {
 
 .popular-wrapper {
     width: 550px;
-    margin-right: 150px;
 }
 
 .footer .container {
@@ -301,13 +301,21 @@ img {
     }
 
     .welcome {
-        margin-top: -335px;
+        background-position: 10% 50%;
     }
 
     .welcome-subtitle,
     .welcome-title,
     .welcome p {
         width: 100%;
+    }
+
+    .welcome p {
+        width: 384px;
+    }
+
+    .out-products-txt {
+        margin-top: -50px;
     }
 
     .out-product .container {
@@ -319,6 +327,8 @@ img {
     .card-1 {
         grid-column: span 2;
         width: 100%;
+        margin-inline: 50px;
+        margin: 0 auto;
     }
 
     .card {
@@ -327,90 +337,37 @@ img {
 
     .popular-wrapper {
         width: 100%;
-        margin-right: 0;
         text-align: center;
+
+        color: white;
+    }
+
+    .popular-wrapper h1 {
+        display: inline;
+        background-color: #000000;
+    }
+
+    .popular-wrapper p {
+        display: inline;
+        background-color: #000000;
+    }
+
+    .popular-wrapper .btn {
+        margin: 20px auto 0;
     }
 
     .popular {
         flex-direction: column;
-        height: auto;
         justify-content: center;
         background-size: cover;
         padding: 20px;
     }
 
 
-    .footer .container {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        text-align: center;
-    }
-
     .footer-usefullinks-list,
     .footer-social-list {
         margin-bottom: 20px;
     }
-
-    #map {
-        width: 100%;
-    }
 }
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-        padding: 0 20px;
-    }
-
-    .welcome {
-        background-position: 10% 30%;
-    }
-
-    .welcome-title {
-        font-size: 2rem;
-    }
-
-    .out-product .container {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-        row-gap: 30px;
-    }
-
-    .card-1 {
-        grid-column: span 3;
-        width: 100%;
-    }
-
-    .footer .container {
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    #map {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-
-@media (min-width: 1025px) {
-    .container {
-        max-width: 1100px;
-        padding: 0 15px;
-    }
-
-    .out-product .container {
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 60px;
-        row-gap: 45px;
-    }
-
-    .card-1 {
-        grid-column: span 2;
-    }
-
-    #map {
-        height: 250px;
-    }
-}
