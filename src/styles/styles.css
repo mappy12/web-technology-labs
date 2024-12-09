@@ -63,6 +63,9 @@ img {
 }
 
 .header {
+    position: sticky;
+    z-index: 1;
+
     padding: 25px 10px;
     top: 0;
 }
@@ -115,7 +118,7 @@ img {
 }
 
 .welcome {
-    margin-top: -162px;
+    margin-top: -182px;
     height: 500px;
     padding-top: 250px;
     background-image: url(/src/images/welcome-bg.png);
@@ -134,8 +137,9 @@ img {
 
 .out-product .container {
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 50px;
     row-gap: 45px;
 
     justify-content: center;
@@ -146,7 +150,7 @@ img {
     color: white;
     background-color: #040101;
 
-    width: 250px;
+    max-width: 560px;
     border-radius: 12px;
 
     overflow: hidden;
@@ -179,7 +183,7 @@ img {
     grid-column: span 2;
     grid-row: span 2;
 
-    width: 550px;
+    width: 560px;
 }
 
 .card-1 img {
@@ -199,10 +203,21 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     background-image: url(/src/images/money-motive.png);
+    background-size: cover;
+
     height: 700px;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center 20%;;
+
+    padding-bottom: 60px;
+}
+
+.popular-wrapper {
+    width: 550px;
+    margin-right: 100px;
 }
 
 .popular h1 {
@@ -231,9 +246,6 @@ img {
     margin-top: 20px;
 }
 
-.popular-wrapper {
-    width: 550px;
-}
 
 .footer .container {
     display: flex;
@@ -274,9 +286,35 @@ img {
 }
 
 
+@media (max-width: 1050px) {
+    .welcome {
+        padding-bottom: 50px;
+
+        background-position: 20% 38%;
+    }
+
+    .popular-wrapper {
+        margin-right: 20px;
+    }
+
+    .popular {
+        background-position: center 40%;
+    }
+}
+
 @media (max-width: 1024px) {
     .welcome {
         margin-top: -200px;
+    }
+}
+
+@media(max-width: 1184px) {
+    .out-product .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card-1 {
+        width: 635px;
     }
 }
 
@@ -284,10 +322,18 @@ img {
     .welcome {
         margin-top: -230px;
     }
+
+    .popular {
+        background-position: -10% center;
+    }
 }
 
 
 @media (max-width: 768px) {
+
+    .container {
+        width: 600px;
+    }
     
     .header-list {
         display: none;
@@ -320,8 +366,8 @@ img {
 
     .out-product .container {
         grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 20px;
+        column-gap: 60px;
+        row-gap: 50px;
     }
 
     .card-1 {
@@ -337,8 +383,9 @@ img {
 
     .popular-wrapper {
         width: 100%;
-        text-align: center;
+        margin-right: 0px;
 
+        text-align: center;
         color: white;
     }
 
@@ -361,12 +408,60 @@ img {
         justify-content: center;
         background-size: cover;
         padding: 20px;
+
+        background-position: 10% center;
+    }
+
+    .popular-price, .popular-old-price {
+        color: white;
+        backdrop-filter: blur(10px);
     }
 
 
     .footer-usefullinks-list,
     .footer-social-list {
         margin-bottom: 20px;
+    }
+}
+
+@media(max-width:655px) {
+
+    .out-product .container {
+        grid-template-columns: 1fr;
+        column-gap: 20px; 
+        row-gap: 30px; 
+        justify-items: center; 
+    }
+
+    .card {
+        max-width: 400px; 
+    }
+
+    .card-1 {
+        grid-column: span 1; 
+        width: 100%;
+
+        max-height: 400px;
+    }
+
+    .card-1 h3 {
+        font-size: 25px;
+    }
+
+    .card-1 img {
+        height: 60%;
+    }
+}
+
+@media(max-width: 425px) {
+    .welcome {
+        font-size: 10px;
+    }
+
+    .welcome-subtitle,
+    .welcome-title,
+    .welcome .btn {
+        margin-top: 40px;
     }
 }
 
