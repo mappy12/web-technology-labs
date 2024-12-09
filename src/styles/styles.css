@@ -311,10 +311,12 @@ img {
 @media(max-width: 1184px) {
     .out-product .container {
         grid-template-columns: 1fr 1fr 1fr;
+        padding-inline: 50px;
     }
 
     .card-1 {
-        width: 635px;
+        grid-column: span 2;
+        width: 100%;
     }
 }
 
